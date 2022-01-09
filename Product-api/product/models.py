@@ -3,5 +3,6 @@ from uuid import uuid4
 
 class Product(models.Model):
   id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-  name= models.CharField(max_length=255)
-  weight= models.FloatField()
+  name = models.CharField(max_length=255)
+  weight = models.FloatField()
+  price = models.FloatField()
